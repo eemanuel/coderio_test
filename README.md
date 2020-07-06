@@ -79,10 +79,18 @@ $  cd coderio_test/flask/
 $  sudo docker-compose up
 ```
 
-## Check in browser the url:
+## Check in browser the following url:
 
 ```
 http://0.0.0.0:8000/<lat>/<lon>/?services=accuweather&services=noaa&services=weather.com
+```
+
+## To run tests:
+
+In antoher terminal:
+
+```sh
+sudo docker-compose exec web-django pytest -v
 ```
 
 ## Add new Service
