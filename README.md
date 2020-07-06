@@ -15,14 +15,14 @@ $  sudo docker network create --driver bridge django-flask-net
 In one terminal:
 
 ```sh
-$  cd coderio/
+$  cd coderio_test/coderio/
 $  sudo docker-compose up
 ```
 
 In another terminal:
 
 ```sh
-$  cd flask/
+$  cd coderio_test/flask/
 $  sudo docker-compose up
 ```
 
