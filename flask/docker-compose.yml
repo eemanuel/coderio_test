@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web-flask:
+    build: .
+    command: python -m flask run --host=0.0.0.0
+    ports:
+      - "8080:8080"
+    networks:
+      - django-flask-net
+
+networks:
+  django-flask-net:
+    external: true
